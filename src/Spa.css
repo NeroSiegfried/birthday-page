@@ -21,6 +21,7 @@ img {
   color: #e0218a;
   font-size: min(max(13vw, 13vh), min(25vw, 25vh));
   text-align: center;
+  text-shadow: -5px 5px 10px #87ced0;
 }
 
 .info {
@@ -28,4 +29,5 @@ img {
   font-size: min(max(4.5vh, 4.5vw), min(9vw, 9vh));
   color: #e0218a;
   text-align: center;
+  text-shadow: 2px 2px 2px #87ced0, -2px 2px 2px #87ced0, -2px -2px 2px #87ced0, 2px -2px 2px #87ced0;
 }

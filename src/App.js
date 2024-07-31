@@ -7,25 +7,25 @@ import FinalPage from "./FinalPage";
 import YoursTruly from "./YoursTruly";
 
 function App() {
-
   const ref = useRef(null);
 
   const handleClick = () => {
-    ref.current?.scrollIntoView({behaviour: 'smooth'});
+    ref.current?.scrollIntoView({ behaviour: "smooth" });
   };
-
 
   return (
     <div className="App">
-      <div ref={ref}><Cake /></div>
-      <div>
-      <LightSwitch
-      onClick={handleClick} />
+      <div ref={ref}>
+        <Cake />
       </div>
       <div>
-      <Spa />
+        <LightSwitch onClick={handleClick} />
       </div>
-      <div>      <FinalPage />     
+      <div>
+        <Spa />
+      </div>
+      <div>
+        <FinalPage />
       </div>
       <YoursTruly />
     </div>
