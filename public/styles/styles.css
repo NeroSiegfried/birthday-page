@@ -1,0 +1,20 @@
+@import url('https://fonts.cdnfonts.com/css/barbie');
+
+body {
+    font-family: 'Barbie', sans-serif;
+    background-color: #facde5;
+    color: #333;
+    margin: 0;
+    scroll-snap-type: both mandatory;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+.App > div {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}

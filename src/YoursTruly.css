@@ -1,0 +1,28 @@
+.goodbye {
+  background-color: #350c23;
+  opacity: 1;
+  background-size: 13px 13px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #052525 0,
+    #052525 1.3px,
+    #350c23 0,
+    #350c23 50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.goodbye > h2 {
+    font-size: min(max(13vw, 13vh), min(25vw, 25vh));
+    font-weight: 500;
+    font-family: 'Barbie';
+    text-shadow: 5px 5px 10px #e0218a;
+    color:hsl(328, 82%, 89%);
+    top: 15px;
+    left: 15px;
+    transform: rotate(-30deg);
+    margin-left: 40px;
+}

@@ -1,0 +1,33 @@
+.section.final {
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4aad4;
+    opacity: 1;
+    background-color: #f4aad4;
+    opacity: 1;
+    background: linear-gradient(135deg, #87ced055 25%, transparent 25%) -17px 0/ 34px 34px, linear-gradient(225deg, #87ced0 25%, transparent 25%) -17px 0/ 34px 34px, linear-gradient(315deg, #87ced055 25%, transparent 25%) 0px 0/ 34px 34px, linear-gradient(45deg, #87ced0 25%, #f4aad4 25%) 0px 0/ 34px 34px;  }
+
+.final {
+    color:#f9dd9a;
+
+    text-shadow: -2px 2px 4px #e0218a;
+}
+
+h2.lead {
+    position: absolute;
+    font-size: min(max(5vw, 5vh), min(10vw, 10vh));
+    top: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+h3.fw-bold {
+    color:#f9dd9a;
+    text-shadow: 2px 2px 4px #e0218a;
+    font-family: cursive;
+}

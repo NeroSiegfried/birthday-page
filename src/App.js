@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import Cake from "./Cake";
+import LightSwitch from "./LightSwitch";
+import "./App.css";
+import Spa from "./Spa";
+import FinalPage from "./FinalPage";
+import YoursTruly from "./YoursTruly";
 
 function App() {
+
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behaviour: 'smooth'});
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div ref={ref}><Cake /></div>
+      <div>
+      <LightSwitch
+      onClick={handleClick} />
+      </div>
+      <div>
+      <Spa />
+      </div>
+      <div>      <FinalPage />     
+      </div>
+      <YoursTruly />
     </div>
   );
 }

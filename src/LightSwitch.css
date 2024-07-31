@@ -1,0 +1,136 @@
+*, *:before, *:after {
+    transition: .2s ease-in-out; }
+  
+  .light-switch-container{
+    position: relative;
+    font-family: helvetica neue,helvetica,arial,sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+  #light-switch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0; }
+    #light-switch:checked ~ #background {
+      background-color: #ebadce; }
+    #light-switch:checked ~ #light-switch-label {
+      box-shadow: 0 2px 2px #d07ca9; }
+      #light-switch:checked ~ #light-switch-label .switch {
+        box-shadow: 0 10px 10px -5px #e9afce, 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 4px #ffd1ea, 0 0 0 5px rgba(0, 0, 0, 0.1); }
+        #light-switch:checked ~ #light-switch-label .switch:before {
+          height: 75px;
+          top: 0px;
+          line-height: 75px;
+          background: #fff4d3;
+          color: #64bf60;
+          text-shadow: 0 0 3px #38ff2e; }
+        #light-switch:checked ~ #light-switch-label .switch:after {
+          height: 70px;
+          bottom: 5px;
+          line-height: 70px;
+          background: #ffebf5;
+          box-shadow: 0 5px 0 #d07cb9;
+          color: #d694c7;
+          text-shadow: 0 0 0px transparent; }
+  
+  #light-switch-label {
+    position: relative;
+    display: block;
+    height: 300px;
+    width: 200px;
+    z-index: 1;
+    margin: 100px auto 0 auto;
+    background-color: #ffd1ea;
+    border-radius: 10px; }
+    #light-switch-label .switch {
+      cursor: pointer;
+      height: 150px;
+      width: 100px;
+      background: #ffebf5;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -75px 0 0 -50px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 10px 10px -5px rgba(233, 175, 206, 0), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 4px #ffd1ea, 0 0 0 5px rgba(0, 0, 0, 0.1); }
+      #light-switch-label .switch:before {
+        content: 'ON';
+        display: block;
+        position: absolute;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        width: 100px;
+        top: 5px;
+        left: 0;
+        background: #efb3d3;
+        color: #c072a5;
+        border-radius: 5px 5px 0 0; }
+      #light-switch-label .switch:after {
+        content: 'OFF';
+        display: block;
+        position: absolute;
+        height: 75px;
+        text-align: center;
+        line-height: 75px;
+        width: 100px;
+        bottom: 0;
+        left: 0;
+        background: #ffd1ea;
+        color: #9819a3;
+        text-shadow: 0 0 3px #ea00ff;
+        border-radius: 0 0 5px 5px; }
+    #light-switch-label .screw {
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      border-radius: 100%;
+      left: 50%;
+      margin-left: -8px;
+      background: #e3a5c6;
+      overflow: hidden;
+      box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15); }
+      #light-switch-label .screw:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        margin-left: -1px;
+        background: rgba(0, 0, 0, 0.2); }
+      #light-switch-label .screw:first-of-type {
+        top: 30px; }
+      #light-switch-label .screw:last-of-type {
+        bottom: 30px; }
+  
+  #background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #132436; }
+  
+
+    .text{
+        font-family: cursive;
+        font-size: min(max(5vw, 5vh), min(10vw, 10vh));
+        color: #e0218a;
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        text-align: center;
+    }
+    .top {
+        top: 15px;
+    }
+    .bottom {
+        bottom: 15px;
+    }
